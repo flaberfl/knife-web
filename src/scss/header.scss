@@ -1,11 +1,65 @@
 //====================================================================================================
 
+.header {
+
+	// .header__top
+
+	&__top {}
+
+	// .header__body
+
+	&__body {}
+
+	// .header__catalog
+
+	&__catalog {}
+}
+
+.top-header {
+
+	// .top-header__container
+
+	&__container {}
+
+	// .top-header__menu
+
+	&__menu {}
+
+	// .top-header__user
+
+	&__user {}
+}
+
+.menu {
+
+	// .menu__body
+
+	&__body {}
+
+	// .menu__list
+
+	&__list {}
+
+	// .menu__item
+
+	&__item {}
+
+	// .menu__link
+
+	&__link {}
+}
+
+.body-header {}
+
+.catalog-header {}
+
 
 //====================================================================================================
 
 //Burger
 .icon-menu {
 	display: none;
+
 	@media (max-width: $mobile) {
 		display: block;
 		position: relative;
@@ -13,6 +67,7 @@
 		height: 22.5px;
 		cursor: pointer;
 		z-index: 5;
+
 		span,
 		&::before,
 		&::after {
@@ -24,23 +79,29 @@
 			height: 2px;
 			background-color: #fff;
 		}
+
 		&::before {
 			top: 0px;
 		}
+
 		&::after {
 			bottom: 0px;
 		}
+
 		span {
 			top: calc(50% - 1px);
 		}
+
 		.menu-open & {
 			span {
 				transform: scale(0);
 			}
+
 			&::before {
 				transform: rotate(-45deg);
 				top: calc(50% - 1px);
 			}
+
 			&::after {
 				transform: rotate(45deg);
 				bottom: calc(50% - 1px);
