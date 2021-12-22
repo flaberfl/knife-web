@@ -195,6 +195,7 @@
 	&__phone {
 		font-weight: 600;
 		line-height: math.div(22, 18);
+		white-space: nowrap;
 	}
 
 	// .phones-header__arrow
@@ -203,6 +204,12 @@
 
 		font-size: rem(10);
 		color: #E8AA31;
+		
+		transition: transform 0.3s ease 0s;
+
+		&._spoller-active {
+			transform: rotate(-180deg);
+		}
 	}
 
 	// .phones-header__list
@@ -212,9 +219,11 @@
 		width: 100%;
 		left: 0;
 		padding: rem(15);
-		border-radius: rem(10);
+		margin: rem(5) 0px 0px 0px;
 
-		background-color: #f5ff;
+		border-radius: rem(10);
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+		background-color: #fff;
 
 		li {
 			&:not(:last-child) {
@@ -224,7 +233,13 @@
 	}
 
 	// .phones-header__callback
-	&__callback {}
+	&__callback {
+		margin: rem(3) 0px 0px 0px;
+
+		font-weight: 700;
+		line-height: math.div(22 , 18);
+		color: #E8AA31;
+	}
 }
 
 .cart-header {

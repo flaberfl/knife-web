@@ -29,20 +29,20 @@ import * as flsFunctions from "./files/functions.js";
 /* (i) необходимо для корректного отображения webp из css  */
 flsFunctions.isWebp();
 /* Добавление класса touch для HTML если браузер мобильный */
-flsFunctions.addTouchClass();
+// flsFunctions.addTouchClass();
 /* Добавление loaded для HTML после полной загрузки страницы */
 // flsFunctions.addLoadedClass();
 /* Модуль для работы с меню (Бургер) */
 flsFunctions.menuInit();
 /* Учет плавающей панели на мобильных устройствах при 100vh */
-flsFunctions.fullVHfix();
+// flsFunctions.fullVHfix();
 
 /*
 Модуль работы со спойлерами
 Документация:
 Сниппет (HTML): spollers
 */
-// flsFunctions.spollers();
+flsFunctions.spollers();
 
 /*
 Модуль работы с табами
@@ -64,7 +64,7 @@ flsFunctions.fullVHfix();
 Сниппет (HTML): pl
 */
 // Для включения ??? (подсказок в консоли) передать true * /
-// flsFunctions.initPopups(false);
+flsFunctions.initPopups(false);
 
 // Работа с формами ========================================================================================================================================================================================================================================================
 import * as flsForms from "./files/forms/forms.js";
